@@ -1,0 +1,9 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo 'Running pre-commit checks: Linting, testing and building before committing your code 🍳'
+
+npx lint-staged
+
+# If all passes, I will commit
+echo '✅ I am committing now. ✅'
