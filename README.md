@@ -43,12 +43,9 @@ To make a PR kindly use the format below
 ```
 ### Description
 
-Updated the z-index for top nav and added people's 
+Give a simple overview of what this PR is for
 
 ### Changes
-- I updated the z index for the top nav so as to avoid overlap with loading animation
-- Added infinite scroll for open to collaboration scroll
-
-### Testing
-- NONE
+- List the changes made 
+- You can go into little detail so others can understand
 ```
