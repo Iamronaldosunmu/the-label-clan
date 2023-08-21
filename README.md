@@ -52,8 +52,3 @@ Updated the z-index for top nav and added people's
 ### Testing
 - NONE
 ```
-
-```
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
