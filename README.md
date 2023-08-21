@@ -37,3 +37,23 @@ If you are developing a production application, we recommend updating the config
 
 -   To Run the app, open the folder and run the dev command:
 -   `npm run dev`
+
+# PR Format
+To make a PR kindly use the format below
+```
+### Description
+
+Updated the z-index for top nav and added people's 
+
+### Changes
+- I updated the z index for the top nav so as to avoid overlap with loading animation
+- Added infinite scroll for open to collaboration scroll
+
+### Testing
+- NONE
+```
+
+```
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
