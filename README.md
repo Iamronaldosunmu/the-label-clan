@@ -36,7 +36,7 @@ If you are developing a production application, we recommend updating the config
 -   Also note that components should go in the `components` folder, page sections should go into the `sections` folder and pages should go into the `pages` folder
 
 -   To Run the app, open the folder and run the dev command:
--   `npm run dev`
+-   `yarn run dev`
 
 # PR Format
 To make a PR kindly use the format below
