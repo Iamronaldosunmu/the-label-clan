@@ -1,0 +1,32 @@
+/* .view-project-button {
+  display: flex;
+  align-items: center;
+}
+
+.arrow-icon::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+
+.view-project-button:hover .arrow-icon::after {
+  margin-left: 10px;
+} */
+
+/* Project.css */
+
+.view-project-button {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.view-project-button:hover {
+  transform: translateX(5px); /* Adjust the value as needed */
+}
+
+.arrow-icon::after {
+  content: "-->";
+  margin-left: 5px;
+}
+
