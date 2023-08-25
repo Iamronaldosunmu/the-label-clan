@@ -39,13 +39,15 @@ If you are developing a production application, we recommend updating the config
 -   `yarn run dev`
 
 # PR Format
+
 To make a PR kindly use the format below
+
 ```
 ### Description
 
 Give a simple overview of what this PR is for
 
 ### Changes
-- List the changes made 
+- List the changes made
 - You can go into little detail so others can understand
 ```

@@ -2,7 +2,7 @@ import image1 from "../images/img1.png";
 import image2 from "../images/img2.png";
 import image3 from "../images/img3.gif";
 
-import "./project.css";
+import styles from "./project.module.css";
 
 const Project = () => {
 	return (
@@ -11,7 +11,7 @@ const Project = () => {
 				<div className="grid md:grid-cols-2 gap-4 text-left">
 					<div className="md:col-span-1 flex justify-start">
 						<div className="flex flex-col">
-							<h2 className="text-1xl mb-5 sm:mb-1 w-60">
+							<h2 className="text-1xl mb-5 sm:mb-1 w-60 font-semibold">
 								Projects
 							</h2>
 							<div className="mb-5 sm:mb-1 w-60 md:w-screen-1/4 border-t border-gray-600 border-opacity-75"></div>
@@ -36,10 +36,15 @@ const Project = () => {
 								right team for their creative projects.
 							</p>
 							<div className="flex justify-end md:justify-start mt-5 md:mt-0">
-								<button className="view-project-button bg-500 rounded-lg">
+								<a
+									className={`${styles["view-project-button"]} bg-500 rounded-lg link-arrow font-semibold`}
+									href="#"
+								>
 									View Projects{" "}
-									<span className="arrow-icon"></span>
-								</button>
+									<span className={styles["arrow-icon"]}>
+										&rarr;
+									</span>
+								</a>
 							</div>
 						</div>
 					</div>
