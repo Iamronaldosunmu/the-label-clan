@@ -8,7 +8,7 @@ const Project = () => {
 	return (
 		<>
 			<div className="projects-section">
-				<div className="grid md:grid-cols-2 gap-4 text-left">
+				<div className="grid sm:grid-cols-2 gap-4 text-left">
 					<div className="md:col-span-1 flex justify-start">
 						<div className="flex flex-col">
 							<h2 className="text-1xl mb-5 sm:mb-1 w-60 font-semibold">
@@ -16,7 +16,7 @@ const Project = () => {
 							</h2>
 							<div className="mb-5 sm:mb-1 w-60 md:w-screen-1/4 border-t border-gray-600 border-opacity-75"></div>
 
-							<p className="font-bold mb-2 text-2xl w-90">
+							<p className="font-bold mb-2 text-2xl">
 								The{" "}
 								<span className="text-purple-700">bridge</span>{" "}
 								between creative young adults and the brands who
@@ -26,7 +26,7 @@ const Project = () => {
 					</div>
 					<div className="md:col-span-1 flex justify-start">
 						<div className="flex flex-col">
-							<p className="mb-3 ">
+							<p className="mb-3">
 								WAC People Agency connects businesses with a
 								pool of talented and creative young
 								professionals from various fields.
@@ -35,13 +35,13 @@ const Project = () => {
 								Our mission is to provide businesses with the
 								right team for their creative projects.
 							</p>
-							<div className="flex justify-end md:justify-start mt-5 md:mt-0">
+							<div className="flex justify-end sm:justify-start mt-6 mb-6 sm:mt-0">
 								<a
-									className={`${styles["view-project-button"]} bg-500 rounded-lg link-arrow font-semibold`}
+									className={`${styles["viewProjectButton"]} px-3 sm:px-0 bg-500 rounded-lg link-arrow font-semibold py-0`}
 									href="#"
 								>
 									View Projects{" "}
-									<span className={styles["arrow-icon"]}>
+									<span className={`${styles["arrowIcon"]}`}>
 										&rarr;
 									</span>
 								</a>
@@ -50,7 +50,7 @@ const Project = () => {
 					</div>
 				</div>
 
-				<div className="grid grid-cols-2 gap-4 mt-6">
+				<div className="grid grid-cols-2 gap-4 sm:mt-0 mt-6">
 					<div className="md:col-span-1">
 						<img
 							src={image1}
