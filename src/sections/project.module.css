@@ -1,0 +1,12 @@
+.arrowIcon {
+	display: inline-block;
+	margin-left: 2px;
+	transition: transform 0.3s ease-in-out;
+	font-size: 24px;
+	font-weight: bold;
+	/* margin-top: 1px; */
+}
+
+.viewProjectButton:hover .arrowIcon {
+	transform: translateX(5px);
+}
