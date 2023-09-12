@@ -1,3 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.growText {
+	font-size: 1.625rem;
+	font-size: clamp(1.625rem, 5.41vw + 0.135rem, 5rem);
+}
+
+.customGrid {
+	position: relative;
+	display: grid;
+	justify-items: end;
+	grid-template-columns: 2fr 1fr 1fr 1fr;
+	grid-template-rows: 0.8fr 0.5fr 0.5fr 1fr auto;
+}
+
+.image1 {
+	min-width: 122px;
+	min-height: 138px;
+	width: 100%;
+	grid-column: 3 / 4;
+	grid-row: 1;
+	object-fit: cover;
+}
+
+.image2 {
+	position: relative;
+	top: 20px;
+	right: 0;
+	max-width: 110px;
+	max-height: 204px;
+	box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.25);
+	width: 100%;
+	grid-column: 5 / end;
+	grid-row: 1;
+	object-fit: cover;
+}
+
+.image3 {
+	min-width: 133px;
+	min-height: 422px;
+	width: 100%;
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	object-fit: cover;
+	max-height: 863px;
+}
+
+.image4 {
+	position: absolute;
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	top: 800px;
+	left: 300px;
+	max-width: 356px;
+	min-width: 101px;
+	object-fit: cover;
+}
+
+.image5 {
+	position: relative;
+	bottom: 50px;
+	min-width: 167px;
+	min-height: 247px;
+	width: 100%;
+	grid-column: 5 / end;
+	grid-row: 4 / 5;
+	object-fit: cover;
+}
+
+.gridText {
+	position: relative;
+	width: 100%;
+	grid-column: 3 / 5;
+	grid-row: 2 / 4;
+	object-fit: cover;
+}
+
+.star::before,
+.star::after {
+	content: url(/src/assets/icons/star.svg);
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	height: 20px;
+	object-fit: cover;
+}
+
+.star::before {
+	top: 0;
+	right: 100px;
+}
+
+.star::after {
+	bottom: 35px;
+	left: 100px;
+}
+
+@media (max-width: 1024px) {
+	.star::before,
+	.star::after {
+		width: 15px;
+		height: 15px;
+	}
+}
+
+@media (min-width: 530px) {
+	.customGrid {
+		grid-template-columns: 1.2fr 0.5fr 1fr 2fr 1fr;
+		grid-template-rows: 0.8fr 0.5fr 0.5fr 1fr auto;
+	}
+
+	.gridText {
+		grid-column: 2 / 5;
+	}
+
+	.image2 {
+		max-width: 100%;
+		max-height: 100%;
+		min-width: 110px;
+		min-height: 204;
+	}
+}
