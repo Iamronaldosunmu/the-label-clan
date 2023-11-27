@@ -8,7 +8,7 @@ const Project = () => {
 	return (
 		<>
 			<div className="projects-section">
-				<div className="grid sm:grid-cols-2 gap-4 text-left">
+				<div className="grid lg:grid-cols-2 gap-4 text-left">
 					<div className="md:col-span-1 flex justify-start">
 						<div className="flex flex-col">
 							<h2 className="text-1xl mb-5 sm:mb-1 w-60 font-semibold">
@@ -35,7 +35,7 @@ const Project = () => {
 								Our mission is to provide businesses with the
 								right team for their creative projects.
 							</p>
-							<div className="flex justify-end sm:justify-start mt-6 mb-6 sm:mt-0">
+							<div className="flex justify-end lg:justify-start mt-6 mb-6 lg:mt-0">
 								<a
 									className={`${styles["viewProjectButton"]} px-3 sm:px-0 bg-500 rounded-lg link-arrow font-semibold py-0`}
 									href="#"
