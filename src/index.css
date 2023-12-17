@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: "ClashDisplaySemi";
+	src:
+		url("fonts/clash-display/ClashDisplay-Semibold.woff2") format("woff2"),
+		url("fonts/clash-display/ClashDisplay-Semibold.woff") format("woff"),
+		url("fonts/clash-display/ClashDisplay-Medium.woff") format("woff"),
+		url("fonts/clash-display/ClashDisplay-Medium.woff2") format("woff2");
+	font-weight: 600;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ClashDisplayMedium";
+	src:
+		url("fonts/clash-display/ClashDisplay-Medium.woff") format("woff"),
+		url("fonts/clash-display/ClashDisplay-Medium.woff2") format("woff2");
+	font-weight: 300;
+	font-display: swap;
+	font-style: normal;
+}
+
+.linkBtn::before,
+.link-btn::before {
+	@apply content-[''] absolute z-10 left-0 bottom-0 w-0 h-[2px] transition-all duration-500 ease-in-out;
+}
+
+.linkBtn::before {
+	@apply bg-white-100;
+}
+
+.link-btn::before {
+	@apply bg-opacity-80 bg-black;
+}
+
+.linkBtn:hover::before,
+.link-btn:hover::before {
+	@apply w-full;
+}
+
+.aboutHeaderText{
+    @apply text-[4.5vw] sm:text-[1.5rem] md:text-[1.75rem] absolute -top-[20px] md:-top-[30px] font-roboto
+}
