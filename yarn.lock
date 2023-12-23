@@ -349,6 +349,11 @@
   "resolved" "https://registry.npmjs.org/@remix-run/router/-/router-1.13.0.tgz"
   "version" "1.13.0"
 
+"@studio-freight/lenis@^1.0.29":
+  "integrity" "sha512-z/qS8ato5m2wlxQREYj5iALcxMrhhm06vEiLqYzLI+3HmpPzPscmJ8cXNiay4bj692vOot2hyTA3WP++AQVoKA=="
+  "resolved" "https://registry.npmjs.org/@studio-freight/lenis/-/lenis-1.0.29.tgz"
+  "version" "1.0.29"
+
 "@types/json-schema@^7.0.12":
   "integrity" "sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA=="
   "resolved" "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.12.tgz"
