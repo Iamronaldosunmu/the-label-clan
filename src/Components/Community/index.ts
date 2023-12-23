@@ -1,2 +1,2 @@
-import Community from "./community";
+import Community from "./Community";
 export default Community;
